@@ -1,5 +1,6 @@
 require('rspec')
 require('task')
+require('pry')
 
   describe(Task) do
     before() do
@@ -32,6 +33,7 @@ require('task')
       Task.new("wash the lion").save()
       Task.clear()
       expect(Task.all()).to(eq([]))
+binding.pry
     end
   end
 end
